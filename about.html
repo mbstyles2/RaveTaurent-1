@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | RaveTaurent</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0; padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header, footer {
+      background-color: #d62828;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      border-radius: 8px;
+    }
+    h2 {
+      color: #d62828;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    .team-section {
+      margin-top: 40px;
+    }
+    .team-member {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .team-member img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+    .team-member-info {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>About RaveTaurent</h1>
+</header>
+
+<div class="container">
+  <section>
+    <h2>Our Story</h2>
+    <p>Founded in 2020 in the heart of Lagos, <strong>RaveTaurent</strong> was born from a passion for exceptional food, warm hospitality, and community connection. We’ve grown from a humble neighborhood eatery to a celebrated restaurant known for its fusion of traditional Nigerian flavors with a modern twist.</p>
+    
+    <p>Whether you’re here for a quick lunch, a romantic dinner, or a celebration with friends, RaveTaurent serves dishes made with love and the freshest ingredients. Our mission is simple — to serve flavorful meals that make every guest feel at home.</p>
+  </section>
+
+  <section>
+    <h2>Our Philosophy</h2>
+    <p>At RaveTaurent, we believe food is more than nourishment — it's a shared experience. That's why we focus on:</p>
+    <ul>
+      <li>🌿 Using locally sourced, high-quality ingredients</li>
+      <li>🍲 Honoring Nigerian culinary traditions</li>
+      <li>👨‍🍳 Providing top-notch service in a relaxed, stylish setting</li>
+    </ul>
+  </section>
+
+  <section class="team-section">
+    <h2>Meet the Team</h2>
+
+    <div class="team-member">
+      <img src="images/chef.jpg" alt="Head Chef">
+      <div class="team-member-info">
+        <strong>Chef Anna Doe</strong><br>
+        <small>Head Chef</small>
+        <p>With over 15 years of culinary experience, Chef Anna brings bold flavors and creativity to every plate.</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <img src="images/manager.jpg" alt="Restaurant Manager">
+      <div class="team-member-info">
+        <strong>Zeca Rex</strong><br>
+        <small>Restaurant Manager</small>
+        <p>Rex ensures your visit is smooth, welcoming, and unforgettable. He lives and breathes hospitality.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  &copy; <?php echo date("Y"); ?> RaveTaurent. All Rights Reserved.
+</footer>
+
+</body>
+</html>

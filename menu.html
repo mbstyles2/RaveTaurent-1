@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Our Authentic African Menu - Ravetaurent</title>
+    <style>
+        /* Basic CSS for styling - you would typically link an external stylesheet */
+        :root {
+            --transition: background 0.5s, color 0.5s;
+            --bg: white;
+            --text: :#333;
+    /* --accent: #007BFF; */
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            background-color: #f4f7f6; /* Light, calm background */
+            color: #333;
+            line-height: 1.6;
+        }
+        .menu-container {
+            max-width: 950px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 35px 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50; /* Darker blue-grey for main title */
+            margin-bottom: 40px;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .menu-category {
+            margin-bottom: 50px;
+        }
+        .menu-category h2 {
+            font-size: 2.2em;
+            color: #e63946;; /* Vibrant orange for category titles */
+            border-bottom: 3px solid #e63946; /* Slightly darker orange for emphasis */
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+            text-transform: capitalize;
+            letter-spacing: 0.5px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Align descriptions to the top */
+            padding: 15px 0;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .item-details {
+            flex-grow: 1;
+            margin-right: 20px;
+        }
+        .item-name {
+            font-weight: bold;
+            font-size: 1.3em;
+            color: #34495e; /* Dark blue-grey for item names */
+            margin-bottom: 5px;
+        }
+        .item-description {
+            font-size: 1em;
+            color: #555;
+        }
+        .item-price {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #27ae60; /* Green for prices */
+            white-space: nowrap; /* Prevents price from wrapping */
+            min-width: 80px; /* Ensure price column has enough space */
+            text-align: right;
+        }
+        .disclaimer {
+            font-size: 0.85em;
+            color: #888;
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .menu-container {
+                padding: 25px 20px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            .menu-category h2 {
+                font-size: 1.8em;
+            }
+            .menu-item {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .item-details {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .item-price {
+                text-align: left;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar" id="navbar">
+          <a href="#" class="brand">Rave<span style="color:#e63946;">Taurent</span></a>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reserve.html">Reservations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="co">
+            <div class="buttons">
+              <button class="themes" style="background-color: blue;" onclick="setTheme('blue')"></button>
+              <button class="themes"  style="background-color: red;" onclick="setTheme('red')"></button>
+              <button class="themes"  style="background-color: green;"onclick="setTheme('green')"></button>
+              <button class="themes"  style="background-color: purple;"onclick="setTheme('purple')"></button>
+            </div>
+          </div>
+      
+          <button id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+        </nav>
+      </header>
+
+
+    <div class="menu-container">
+        <h1>MENU</h1>
+
+        <div class="menu-category">
+            <h2>Soups & Stews (Served with choice of Swallows)</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Egusi Soup</span>
+                    <span class="item-description">Rich and hearty melon seed soup with spinach, assorted meats (beef, tripe, ponmo), and smoked fish.</span>
+                </div>
+                <span class="item-price">₦4,500</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Ogbono Soup</span>
+                    <span class="item-description">Nutritious draw soup made from wild mango seeds, infused with traditional spices and protein of your choice.</span>
+                </div>
+                <span class="item-price">₦4,800</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Afang Soup</span>
+                    <span class="item-description">A vibrant vegetable soup from the Efik/Ibibio people, packed with fluted pumpkin leaves, waterleaf, and seafood.</span>
+                </div>
+                <span class="item-price">₦5,500</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Fisherman's Soup</span>
+                    <span class="item-description">A seafood lover's delight! Assorted fresh fish, prawns, and calamari in a flavourful, spicy broth.</span>
+                </div>
+                <span class="item-price">₦6,500</span>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>Rice Dishes</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <img src="/images/jollof.jpg" width="300px" alt="">
+                    <span class="item-name">Jollof Rice</span>
+                    <span class="item-description">Our signature smoky and flavourful rice, cooked in a rich tomato and pepper base. Served with coleslaw and plantain.</span>
+                </div>
+                <span class="item-price">₦2,000</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Fried Rice</span>
+                    <span class="item-description">Wok-tossed rice with mixed vegetables, chicken, and a hint of soy.</span>
+                </div>
+                <span class="item-price">₦2,500</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Ofada Rice & Sauce</span>
+                    <span class="item-description">Locally sourced unpolished rice, served with a spicy palm oil sauce, assorted meats, and boiled egg.</span>
+                </div>
+                <span class="item-price">₦4,000</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">White Rice & Sauce</span>
+                    <span class="item-description">Locally or foreign polished rice, served with a spicy tomato & pepper sauce, assorted meats, and boiled egg.</span>
+                </div>
+                <span class="item-price">₦1,500</span>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>Grills & Sides (Add-ons to your main dish)</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Grilled Fish (Tilapia/Catfish)</span>
+                    <span class="item-description">Whole grilled fish marinated in our special spices. (Market Price)</span>
+                </div>
+                <span class="item-price">₦[Varies]</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Suya (Beef/Chicken)</span>
+                    <span class="item-description">Spicy grilled skewers, dusted with traditional yaji spice mix.</span>
+                </div>
+                <span class="item-price">₦2,500</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Roasted Plantain (Boli)</span>
+                    <span class="item-description">Sweet roasted plantain, a perfect accompaniment.</span>
+                </div>
+                <span class="item-price">₦1,000</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Extra Protein</span>
+                    <span class="item-description">Beef, Chicken, Ponmo, or Tripe.</span>
+                </div>
+                <span class="item-price">₦1,500</span>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>Local Delicacies</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Pounded Yam & Egusi</span>
+                    <span class="item-description">Smoothly pounded yam served with our rich Egusi soup and assorted meats.</span>
+                </div>
+                <span class="item-price">₦5,000</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Amala & Gbegiri/Ewedu</span>
+                    <span class="item-description">Yam flour swallow served with a traditional bean soup (Gbegiri) and jute leaf soup (Ewedu), with stew and protein.</span>
+                </div>
+                <span class="item-price">₦4,800</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Yam Porridge (Asaro)</span>
+                    <span class="item-description">Chunks of yam cooked in a savoury sauce with palm oil, leafy greens, and smoked fish.</span>
+                </div>
+                <span class="item-price">₦3,500</span>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>Beverages & Desserts</h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Zobo (Hibiscus Drink)</span>
+                    <span class="item-description">Refreshing homemade Nigerian hibiscus drink, sweetened and spiced.</span>
+                </div>
+                <span class="item-price">₦800</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Kunu (Millet Drink)</span>
+                    <span class="item-description">Traditional fermented millet drink, known for its nutty flavour and health benefits.</span>
+                </div>
+                <span class="item-price">₦800</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Palm Wine</span>
+                    <span class="item-description">Freshly tapped, naturally fermented palm sap (subject to availability).</span>
+                </div>
+                <span class="item-price">₦1,500</span>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Seasonal Fruit Platter</span>
+                    <span class="item-description">A selection of fresh, ripe seasonal fruits.</span>
+                </div>
+                <span class="item-price">₦2,500</span>
+            </div>
+        </div>
+
+        <p class="disclaimer">Prices are in Nigerian Naira (₦) and are subject to change. Please inform your server of any allergies or dietary restrictions. All "swallows" (Pounded Yam, Amala, Eba, Fufu) are available upon request to accompany your soup/stew.</p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

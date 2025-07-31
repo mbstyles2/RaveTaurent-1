@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Homepage - Ravetaurent</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <a href="#" class="brand">Rave<span>Taurent</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reserve.html">Reservations</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="co">
+        <div class="buttons">
+          <button class="themes" style="background-color: blue;" onclick="setTheme('blue')"></button>
+          <button class="themes"  style="background-color: red;" onclick="setTheme('red')"></button>
+          <button class="themes"  style="background-color: green;"onclick="setTheme('green')"></button>
+          <button class="themes"  style="background-color: purple;"onclick="setTheme('purple')"></button>
+        </div>
+      </div>
+  
+      <button id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+    </nav>
+  </header>
+
+
+  <div class="hero-inner">
+    <h1>Welcome to <span class="accent">RaveTaurent</span></h1>
+    <p>Authentic flavours • Warm ambience • Fast service</p>
+    <a class="btn" href="./reserve.html">Book a Table</a>
+  </div>
+
+<!-- ============== DAILY SPECIAL CARD ============== -->
+<section class="section container">
+  <h2>Chef’s Special Today</h2>
+  <article class="dish-card">
+    <img src="./images/jollof.jpg" width="300px" alt="Jollof">
+    <div class="details">
+      <h3>Jollof Rice</h3>
+      <p>Fresh and Hot party Nigerian jollof rice </p>
+      <p class="price">₦2,500</p>
+      <a href="/menu.html" class="btn">See Full Menu</a>
+    </div>
+  </article>
+
+  <article class="dish-card">
+    <img src="./images/ppf.png" width="300px" alt="PPS">
+    <div class="details">
+      <h3>Pepper Soup</h3>
+      <p>Fresh pepper soup with goat meat</p>
+      <p class="price">₦2,500</p>
+      <a href="/menu.html" class="btn">See Full Menu</a>
+    </div>
+  </article>
+</section>
+<!-- ================= FEATURE STRIP ================= -->
+<section class="features section">
+  <h2 style="text-align: center;">Our Objectives</h2>
+  <div class="container feature-grid">
+    <div class="feature-item">
+      <img src="./images/cuis.jpg" alt="Authentic Cuisine" width="64" height="64">
+      <h3>Authentic Cuisine</h3>
+      <p>Traditional recipes handed down through generations.</p>
+    </div>
+    <div class="feature-item">
+      <img src="./images/interior.jpg" alt="Cozy Ambience" width="64" height="64">
+      <h3>Cozy Ambience</h3>
+      <p>Hand‑crafted interiors that make every meal special.</p>
+    </div>
+    <div class="feature-item">
+      <img src="./images/del.jpg" alt="Fast Delivery" width="64" height="64">
+      <h3>Fast Delivery</h3>
+      <p>Hot meals delivered in under 30 minutes.</p>
+    </div>
+  </div>
+</section>
+
+
+<footer id="footer">
+  <div class="foot">
+    <ul class="foot-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="reserve.html">Reservations</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>   
+  </div>
+  &copy;  RaveTaurent. All Rights Reserved.
+  <a href="#" class="brand">Rave<span style="color:#e63946;">Taurent</span></a>
+</footer>
+
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
