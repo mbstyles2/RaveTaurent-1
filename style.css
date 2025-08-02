@@ -243,6 +243,9 @@ input{
       font-weight:600; 
       /* margin: 1rem; */
   }
+    .feature-item img{
+      margin-left:7rem;
+    }
   
   }
   
